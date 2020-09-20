@@ -6,7 +6,6 @@ class Dog
   
   def initialize(name)
     @name = name
-    @@all << self   #every puppy born pushed into array
     self.save
   end
   
