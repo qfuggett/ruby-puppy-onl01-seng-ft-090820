@@ -4,8 +4,8 @@ class Dog
   attr_accessor :puppy
   @@all = [ ]  #storage for each puppy born/each instance
   
-  def initialize(puppy)
-    @puppy = puppy
+  def initialize(name)
+    @name = name
     @@all << self     #every puppy born pushed into array
   end
   
