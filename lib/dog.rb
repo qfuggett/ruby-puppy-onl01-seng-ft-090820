@@ -27,8 +27,8 @@ class Dog
     @@all.clear
   end
   
-  def puppy
-    @puppy
+  def name
+    @name
   end
   
 end
