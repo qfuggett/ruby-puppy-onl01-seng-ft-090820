@@ -6,7 +6,7 @@ class Dog
   
   def initialize(puppy)
     @puppy = puppy
-    @@all << save
+    @@all << self     #every puppy born pushed into array
   end
   
   def self.all
@@ -15,7 +15,7 @@ class Dog
   
   def self.print_all
     @@all.each do |individual_dogs|
-      puts individual_dogs.
+      puts individual_dogs.puppy
     end
   end
   
@@ -25,6 +25,10 @@ class Dog
   
   def self.clear_all
     @@all.clear
+  end
+  
+  def puppy
+    @puppy
   end
   
 end
